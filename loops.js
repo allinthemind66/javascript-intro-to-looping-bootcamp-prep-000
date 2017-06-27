@@ -11,9 +11,18 @@ function forLoop(array) {
 }
 
 function whileLoop(n){
-let countdown = 10;
-  while (countdown > 0){
-    console.log()
+  while (n > 0){
+    console.log(--n)
+}
+return 'done'
+}
 
-  }
+function doWhileLoop(array){
+  function maybeTrue() {
+  return Math.random() >= 0.5
+}
+do {
+  array = array.slice(1)
+} while (array.length > 0 && maybeTrue());
+return array
 }
